@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="content">
+    <div id="top">
+        <img src="{{ url_for('static', filename='image/profilepic.jpg') }}" alt="Profilepic">
+        <h1> {{ name }} </h1>
+        <p>
+            @danielle.williams <br>
+            Kingston, Jamaica <br>
+            Joined {{join_date}}
+        </p>
+    </div>
+
+    <div id="bottom">
+        <div id="bio">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nisi,
+                illo vero vitae esse quis officiis temporibus doloremque ab ea laborum nam soluta,
+                distinctio nesciunt id? Voluptates quas nulla facere!
+            </p>
+        </div>
+
+        <div class="stats">
+            <span><strong>18</strong><br>Posts</span>
+            <span><strong>2455</strong><br>Following</span>
+            <span><strong>1426</strong><br>Followers</span>
+        </div>
+
+        <button><strong>Follow</strong></button>
+    </div>
+</div>
+{% endblock %}
